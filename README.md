@@ -1,5 +1,17 @@
-# Projeto referente ao módulo 33 do curso de ciência de dados da EBAC
+# Modelagem de Dados K-Means de clientes de um shopping
 **Este projeto apresenta um pipeline completo de análise de dados, abrangendo desde a ingestão e exploração inicial até as etapas de pré-processamento e preparação dos dados. Ao final, é aplicada a técnica de aprendizado não supervisionado K-Means para segmentação de clientes de um shopping, com o objetivo de identificar padrões de comportamento e gerar insights acionáveis.**
+
+ Tecnologia | Versão | Propósito |
+|-----------|--------|----------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 3.7+ | Linguagem principal |
+| ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) | Latest | Manipulação de dados |
+| ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) | Latest | Computação numérica |
+| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) | Latest | Visualizações |
+| ![Plotly Express](https://img.shields.io/badge/Plotly-Express-3F4F75?logo=plotly&logoColor=white) | Latest | Visualização Interativa|
+| ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=seaborn&logoColor=white) | Latest | Gráficos estatísticos |
+| ![scikit-learn](https://img.shields.io/badge/scikit--learn-compatible-orange?logo=scikit-learn)| Latest| Implementação do K-Means|
+| ![StandardScaler](https://img.shields.io/badge/Sklearn-StandardScaler-F7931E?logo=scikitlearn&logoColor=white) | Latest | Padronização de Dados|
+| ![OneHotEncoder](https://img.shields.io/badge/Sklearn-OneHotEncoder-F7931E?logo=scikitlearn&logoColor=white) | Latest | Dumificação de dados Categóricos|
 
 ## As colunas da minha base são: 
 * CostumerID - Identificado único atribuido a cada cliente
@@ -52,18 +64,3 @@
  * Instale as dependências necessárias:
    pip install -r requirements.txt
 
-## Tecnologias utilizadas:
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
-
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
-
-![Plotly Express](https://img.shields.io/badge/Plotly-Express-3F4F75?logo=plotly&logoColor=white)
-![Plotly Graph Objects](https://img.shields.io/badge/Plotly-Graph%20Objects-3F4F75?logo=plotly&logoColor=white)
-
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-4C72B0)
-
-![StandardScaler](https://img.shields.io/badge/Sklearn-StandardScaler-F7931E?logo=scikitlearn&logoColor=white)
-![KMeans](https://img.shields.io/badge/Sklearn-KMeans-F7931E?logo=scikitlearn&logoColor=white)
-![OneHotEncoder](https://img.shields.io/badge/Sklearn-OneHotEncoder-F7931E?logo=scikitlearn&logoColor=white)
