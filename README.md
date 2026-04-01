@@ -1,6 +1,5 @@
 # Projeto referente ao módulo 33 do curso de ciência de dados da EBAC
-**Neste projeto é feito todo o processo de uma análise completa de dados desde o seu carregamento passando por todas a fases de pré-processamento de dados
-até a aplicação do algoritimo de aprendizado não supervisionado k-means em uma base de clientes de um shopping**
+**Este projeto apresenta um pipeline completo de análise de dados, abrangendo desde a ingestão e exploração inicial até as etapas de pré-processamento e preparação dos dados. Ao final, é aplicada a técnica de aprendizado não supervisionado K-Means para segmentação de clientes de um shopping, com o objetivo de identificar padrões de comportamento e gerar insights acionáveis.**
 
 ## As colunas da minha base são: 
 * CostumerID - Identificado único atribuido a cada cliente
@@ -10,42 +9,48 @@ até a aplicação do algoritimo de aprendizado não supervisionado k-means em u
 * Spending Score(1 - 100) - Pontuação atribuida pelo shopping com base no comportamento e padrão de gastos do cliente
 
 ## O que foi feito:
-* Feita a importação de todas as bibliotecas necessárias no projeto
-* Importação do CSV
-* Primeira Etapa do pré-processamento de dados:
-  * Verificação de tipos de dados
-  * Verificação de valores únicos 
-  * Verificação de valores nulos ou faltantes
-  * Verificação de valores unicos presentes em cada coluna
-  * Renomeação de colunas para facilitar o tratamento posterior
-* Segunda Etapa do pré-processamento de dados:
-  * Verificação de outliers com o describe() e também com gráficos
-  * Análise univariada da variável categorica
-  * Dumificação das variáveis e criação de um dataframe
-  * Análise Bivariada
-* Terceira Etapa do pré processamento de dados:
-  * Plot de uma matriz de correlação para medir a correlação entre as variáveis
-  * Padronização dos valores
-* Aplicação do algoritimo de Aprendizado não supervisionado k-means utilizando dois clusters:
-  * Criação dos Centroides
-  * Verificação do formato dos centroides
-  * Construção da matriz de dispersão
-    * Revertendo a padronização dos centroides
-    * Criando as Etiquetas
-    * Plotando a matriz de dispersão
-    * Avaliando o modelo
-* Aplicação do algoritimo de Aprendizado não supervisionado k-means utilizando três clusters:
-  * Criação dos Centroides
-  * Verificação do formato dos centroides
-  * Construção da matriz de dispersão
-    * Revertendo a padronização dos centroides
-    * Criando as Etiquetas
-    * Plotando a matriz de dispersão
-    * Avaliando o modelo
+1 - Feita a importação de todas as bibliotecas necessárias no projeto
+ * Importação do CSV
+ * Carregamento da base de dados (CSV)
+2 - Pré-processamento de Dados:
+   **Análise Exploratória Inicial (EDA)**
+   * Inspeção dos tipos de dados e estrutura do dataset
+   * Identificação de valores únicos por variável
+   * Verificação de valores ausentes (missing values)
+   * Padronização e renomeação de colunas para melhor legibilidade
+  **Tratamento e Análise Exploratória**
+   * Detecção de outliers utilizando estatísticas descritivas e visualizações
+   * Análise univariada da variável categorica
+   * Codificação de variáveis categóricas (dummificação)
+   * Análise bivariada para identificação de relações entre variáveis
+   **Preparação para Modelagem**
+     * Construção de matriz de correlação
+     * Padronização das variáveis numéricas (scaling)
+ 3 - Terceira Etapa do pré processamento de dados:
+   * Plot de uma matriz de correlação para medir a correlação entre as variáveis
+   * Padronização dos valores
+  **Segmentação com 2 Clusters**:
+   * Treinamento do modelo K-Means
+   * Análise e interpretação dos centróides
+   * Criação de labels (clusters)
+   * Visualização dos clusters (matriz de dispersão)
+   * Avaliação do modelo
+  **Segmentação com 3 Clusters**
+  * Treinamento do modelo K-Means
+  * Análise e interpretação dos centróides
+  * Criação de labels (clusters)
+  * Visualização dos clusters (matriz de dispersão)
+  * Avaliação comparativa dos resultados
+
 ## Como Rodar o projeto
-* Clone o repositório em sua máquina
-* Abra o arquivo Profissao Cientista de Dados M33 A1 Pratique em um ambiente python
-* Execute o código celula por celula
+1.  Clone o repositório em sua máquina:
+ * git clone https://github.com/GrizzoHenrique/ModelagemKmeans
+2. Acesse o diretório do projeto
+ * cd ModelagemKmeans
+3. Configure o ambiente:
+ * Cerfique-se de ter o python instalado
+ * Instale as dependências necessárias:
+   pip install -r requirements.txt
 
 ## Tecnologias utilizadas:
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
